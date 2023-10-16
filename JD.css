@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #070707;
+}
+
+:root {
+    --oraange: #EE661A;
+    --text-gradient: linear-gradient(180deg, #EE661A 32.81%, rgb(255 80 0 / 48%) 67.19%);
+
+}
+
+body {
+    /* background-color: #070707; */
+    /* height: 100%;
+    width: 100%; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#text-container {
+    overflow: hidden;
+  }
+
+  #text-container .text {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+/* 
+.main{
+
+} */
+.navbar {
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.nav {
+    margin: 0px 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo .logo-img {
+    width: 100px;
+}
+
+.nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav .menu .m-list {
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.nav .menu .m-list a {
+    margin: 0px 25px 0px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--oraange);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav .menu .m-icon {
+    width: 30px;
+}
+
+/* home */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.text {
+    background-image: var(--text-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Playfair Display', serif;
+}
+
+.home .h-t {
+    font-size: 12rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#bottle {
+    position: absolute;
+    width: 17%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    background: transparent;
+}
+
+#glass1 {
+    position: absolute;
+    top: 10%;
+    left: 77%;
+    width: 9%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    background: transparent;
+    transform: rotate(336deg);
+    z-index: 4;
+}
+
+#glass2 {
+    position: absolute;
+    width: 10%;
+    z-index: 3;
+    top: 66%;
+    right: 39%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    background: transparent;
+}
+
+#ice1 {
+    top: 4%;
+    left: 10%;
+    transform: rotate(60deg);
+    position: absolute;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    background: transparent;
+}
+
+#ice2 {
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 8%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    background: transparent;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.about .a-left {
+    width: 50%;
+}
+
+.about .a-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0px 8vw 0px 1vw;
+}
+
+.about .a-right .a-t {
+    font-size: 8rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.about .a-right .a-t::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 40%;
+    height: 5px;
+    background: var(--text-gradient);
+    border-radius: 5px;
+}
+
+
+.about .a-right p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+/* flavors */
+
+.flovors {
+    width: 100%;
+    height: 100vh;
+}
+
+.bottles {
+
+    display: flex;
+    justify-content: center;
+}
+
+.flovors #bottle2 {
+    width: 330px;
+    background: transparent;
+}
+
+.flovors #bottle3 {
+    background: transparent;
+    width: 370px;
+}
+
+.flovors .f-t {
+    font-size: 10rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -32px;
+    letter-spacing: 6px;
+}
+
+
+/* recipe */
+
+.recipe {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+}
+.recipe .r-t{
+    position: absolute;
+    font-size: 30rem;
+}
+.recipe .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate  20s linear infinite;
+    background: transparent;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* contact */
+
+.contact .social{
+    color: var(--oraange);
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.contact .social a{
+    color: #fff;
+    text-decoration: none;
+}
