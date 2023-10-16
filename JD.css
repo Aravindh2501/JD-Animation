@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@ body {
     /* background-color: #070707; */
     /* height: 100%;
     width: 100%; */
-    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Raleway', sans-serif; */
     font-family: 'Poppins', sans-serif;
     /* overflow: hidden; */
 }
@@ -28,13 +28,13 @@ body::-webkit-scrollbar {
 
 #text-container {
     overflow: hidden;
-  }
+}
 
-  #text-container .text {
+#text-container .text {
     display: inline-block;
     opacity: 0;
     transform: translateY(100%);
-  }
+}
 
 /* 
 .main{
@@ -98,7 +98,7 @@ body::-webkit-scrollbar {
     background-image: var(--text-gradient);
     -webkit-background-clip: text;
     color: transparent;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .home .h-t {
@@ -243,16 +243,18 @@ body::-webkit-scrollbar {
     align-items: center;
     /* background: red; */
 }
-.recipe .r-t{
+
+.recipe .r-t {
     position: absolute;
     font-size: 30rem;
 }
+
 .recipe .box {
     position: relative;
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    animation: animate  20s linear infinite;
+    animation: animate 20s linear infinite;
     background: transparent;
 }
 
@@ -291,14 +293,28 @@ body::-webkit-scrollbar {
 
 /* contact */
 
-.contact .social{
+.contact .social {
     color: var(--oraange);
     text-decoration: none;
     justify-content: space-around;
     padding: 20px 0px;
 }
 
-.contact .social a{
+.contact .social a {
     color: #fff;
     text-decoration: none;
 }
+
+
+/* ::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:var(--oraange);
+} */
